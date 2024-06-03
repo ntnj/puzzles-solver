@@ -10,3 +10,12 @@ CMakeFiles
 compile_commands.json
 CTestTestfile.cmake
 Makefile
+.gradle
+.vscode
+local.properties
+.idea
+.bloop
+.metals
+target/
+.bsp
+metals.sbt
