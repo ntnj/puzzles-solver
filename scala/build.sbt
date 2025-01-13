@@ -1,12 +1,14 @@
 Global / onChangedBuildSource := ReloadOnSourceChanges
 
-ThisBuild / scalaVersion := "3.5.0-RC2"
+ThisBuild / scalaVersion := "3.6.2"
 
 ThisBuild / scalacOptions ++= Seq("-experimental", "-deprecation", "-explain", "-feature")
 
 ThisBuild / libraryDependencies += "tools.aqua" % "z3-turnkey" % "4.13.0"
 
 ThisBuild / publish / skip := true
+
+ThisBuild / scalafmtPrintDiff := true
 
 lazy val z3s = project
   .settings(
